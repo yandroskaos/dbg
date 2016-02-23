@@ -1,0 +1,60 @@
+LIBRARY dbg
+EXPORTS
+	OSVersion				@1
+	OSGroup					@2
+	OSPlatform				@3
+
+	DbgNew					@11
+	DbgDelete				@12
+	DbgAttach				@13
+	DbgDetach				@14
+	DbgOriginalPid			@15
+
+	DbgSsGetProcess			@21
+	DbgSsGetThread			@22
+	DbgSsGetModule			@23
+	DbgSsProcessesNumber	@24
+	DbgSsAccessProcess		@25
+	DbgSsThreadsNumber		@26
+	DbgSsAccessThread		@27
+	DbgSsModulesNumber		@28
+	DbgSsAccessModule		@29
+
+	DbgBpNewSoftware		@31
+	DbgBpDelSoftware		@32
+	DbgBpNewHardware		@33
+	DbgBpDelHardware		@34
+
+	DbgFindApi				@41
+	DbgModuleForAddress		@42
+	DbgStackRead			@43
+	DbgStackReadParameter	@44
+	DbgStackReturnAddress	@45
+
+	ProcessPID				@51
+	ProcessHandle			@52
+	ProcessPlatform			@53
+	ProcessName				@54
+	ProcessPEB				@55
+
+	ThreadProcess			@61
+	ThreadTID				@62
+	ThreadHandle			@63
+	ThreadTEB				@64
+
+	ModuleProcess			@71
+	ModuleBase				@72
+	ModuleHandle			@73
+	ModuleSize				@74
+	ModulePlatform			@75
+	ModuleName				@76
+	ModuleExportsFunction	@77
+	ModuleExportsSize		@78
+
+	FunctionModule			@81
+	FunctionAddress			@82
+	FunctionName			@83
+
+	PmStart					@91
+	PmStop					@92
+
